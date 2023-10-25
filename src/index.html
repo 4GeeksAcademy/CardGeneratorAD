@@ -14,11 +14,21 @@
   </head>
   <body>
     <div class="container-fluid text-center">
+      <button id="cardbutton">Generate Card</button>
+      <div class="inputs">
+        <label for="widthInput">Width:</label>
+        <input type="number" id="widthInput" placeholder="Card width" />
+        <label for="heightInput">Height:</label>
+        <input type="number" id="heightInput" placeholder="Card height" />
+        <button id="applyDimensions">Change Card Dimentions</button>
+      </div>
+
       <div class="card">
         <span class="top-suit">&spades; </span>
         <span class="number">7</span>
         <span class="bottom-suit">&spades; </span>
       </div>
     </div>
+    <script src="app.js"></script>
   </body>
 </html>

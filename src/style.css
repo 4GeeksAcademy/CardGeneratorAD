@@ -3,17 +3,83 @@ body {
   box-sizing: border-box;
 }
 
-.card {
-  display: inline-block;
+.container-fluid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.button-container {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
   text-align: center;
+  margin-bottom: 20px;
+}
+
+.inputs {
+  margin-top: 20px; /* Add space between the buttons */
+}
+
+.card {
+  text-align: center;
+  display: inline-block;
   background: white;
+  margin: auto;
+  height: 240px;
+  width: 250px;
+  font-size: 80px;
   padding: 20px;
   padding-top: 180px;
   border-radius: 5px;
-  margin: auto;
-  height: 240px;
-  font-size: 80px;
-  width: 250px;
   border: 1px solid black;
   position: relative;
+}
+
+.top-suit {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 80px;
+}
+.bottom-suit {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  font-size: 80px;
+}
+
+.card.spades .top-suit,
+.card.spades .bottom-suit {
+  content: "\2660";
+}
+
+.card.clubs .top-suit,
+.card.clubs .bottom-suit {
+  content: "\2663";
+}
+
+.card.hearts .top-suit,
+.card.hearts .bottom-suit {
+  content: "\2665";
+  color: red;
+}
+
+.card.diams .top-suit,
+.card.diams .bottom-suit {
+  content: "\2666";
+  color: red;
+}
+
+.button {
+  text-align: center;
+  display: block;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  top: 50%;
+  left: 50%;
 }
